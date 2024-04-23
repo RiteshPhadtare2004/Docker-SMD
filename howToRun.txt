@@ -1,0 +1,16 @@
+
+# Dockerfile
+FROM node:alpine
+WORKDIR /GITPROJECT
+COPY . .
+CMD node index.js
+
+
+console.log('Ritesh');
+console.log('TEIT78');
+console.log('TE');
+
+
+node index.js
+docker build -t gitproject .
+docker run gitproject
