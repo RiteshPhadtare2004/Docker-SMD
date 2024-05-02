@@ -1,5 +1,5 @@
 # Dockerfile
 FROM node:alpine
-WORKDIR /GITPROJECT
+WORKDIR /DOCKERPR
 COPY . .
 CMD node index.js

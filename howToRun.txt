@@ -12,5 +12,12 @@ console.log('TE');
 
 
 node index.js
-docker build -t gitproject .
-docker run gitproject
+docker build -t dockerpr .
+docker run dockerpr
+
+
+docker -v
+docker pull OpenJDK
+docker run --name JAVA -it -d OpenJDK
+docker ps
+docker exec -it JAVA jshell
